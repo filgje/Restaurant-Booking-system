@@ -1,5 +1,3 @@
-package exampleproject;
-
 public class PreTable extends Table{
 
     public PreTable(int seats) {
