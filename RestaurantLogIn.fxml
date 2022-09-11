@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exampleproject.RestaurantController">
+   <left>
+      <Text fill="#001a68" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Resturante &#10;Orientato Agli Oggetti.&#10;A wonderful italian restaurant located at Solsiden in Trondheim. We have nine different tables with different quality. &#10;&#10;Following table qualitites are available: &#10; &#9;- Poor&#10;&#9;- Normal&#10;&#9;- Premium&#10;&#10;Prices will vary based on quality, number of people og the length of the reservation. " wrappingWidth="157.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Times New Roman" size="11.5" />
+         </font>
+      </Text>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="14.0" layoutY="65.0" prefHeight="30.0" prefWidth="110.0" text="Username" textAlignment="CENTER" textFill="#001a68">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="108.0" prefHeight="30.0" prefWidth="110.0" text="Password" textAlignment="JUSTIFY" textFill="#001a68">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="UserText" layoutX="150.0" layoutY="69.0" prefHeight="25.0" prefWidth="145.0" promptText="Username" />
+            <Button fx:id="cncl" layoutX="159.0" layoutY="156.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" text="Cancel" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font></Button>
+            <PasswordField fx:id="PassField" layoutX="150.0" layoutY="110.0" prefHeight="25.0" prefWidth="145.0" promptText="Password" />
+            <Button fx:id="LogIn" layoutX="77.0" layoutY="156.0" mnemonicParsing="false" onAction="#LogInCorrect" prefHeight="25.0" prefWidth="71.0" text="Log In" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="13.0" />
+               </font></Button>
+            <Text fx:id="errorMessage" fill="RED" layoutX="37.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="244.13671875">
+               <font>
+                  <Font size="10.0" />
+               </font></Text>
+         </children>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+      </AnchorPane>
+   </right>
+   <center>
+      <Line endY="100.0" startX="1.0947386726911645E-5" startY="-142.47683715820312" stroke="#001a68" strokeWidth="2.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <AnchorPane prefHeight="41.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#16026f" layoutX="78.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resturante Orientato Agli Oggetti" textAlignment="CENTER">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+            </Text>
+            <Line endX="498.83331298828125" endY="42.38882827758789" startX="5.086263172415784E-6" startY="42.38882827758789" stroke="#001a68" strokeWidth="2.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <Text fill="#4e5d80" strokeType="OUTSIDE" strokeWidth="0.0" text="(Enter a new password or username in order to register a new user, or use your former log-in information.)" textAlignment="CENTER" wrappingWidth="495.47013795375824" BorderPane.alignment="BOTTOM_RIGHT">
+         <font>
+            <Font name="Times New Roman" size="10.0" />
+         </font>
+      </Text>
+   </bottom>
+</BorderPane>

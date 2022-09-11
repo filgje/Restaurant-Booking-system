@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exampleproject.AdminPageController">
+   <children>
+      <VBox prefHeight="361.0" prefWidth="401.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" textAlignment="CENTER" wrappingWidth="400.1367492675781">
+               <font>
+                  <Font name="Times New Roman" size="25.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Text>
+            <Line endX="300.0" startX="-100.0" />
+            <ListView fx:id="ListAllRes" prefHeight="431.0" prefWidth="401.0" />
+            <HBox>
+               <VBox.margin>
+                  <Insets right="5.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Text fx:id="error" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.80338096618652">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Text>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                     <buttons>
+                        <Button fx:id="cancel" mnemonicParsing="false" onAction="#cancelBooking" text="Cancel res.">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font></Button>
+                        <Button fx:id="back" minWidth="50.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="25.0" text="Back">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font></Button>
+                     </buttons>
+                  </ButtonBar>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
