@@ -1,4 +1,3 @@
-package exampleproject;
 
 public class PTable extends Table{
 
