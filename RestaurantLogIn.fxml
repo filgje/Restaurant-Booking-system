@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exampleproject.RestaurantController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RestaurantController">
    <left>
       <Text fill="#001a68" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Resturante &#10;Orientato Agli Oggetti.&#10;A wonderful italian restaurant located at Solsiden in Trondheim. We have nine different tables with different quality. &#10;&#10;Following table qualitites are available: &#10; &#9;- Poor&#10;&#9;- Normal&#10;&#9;- Premium&#10;&#10;Prices will vary based on quality, number of people og the length of the reservation. " wrappingWidth="157.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
