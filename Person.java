@@ -1,4 +1,3 @@
-package exampleproject;
 
 public class Person implements Comparable<Person>{
     private String username;
